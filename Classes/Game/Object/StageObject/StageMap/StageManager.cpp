@@ -85,7 +85,6 @@ void StageManager::onTouchMove(cocos2d::Point pos) {}
 void StageManager::onTouchEnd(cocos2d::Point pos) {
 	if (pos.y <= 120) return;
 	mIsChengeColor = true;
-
 	int panelNumber = this->touchPos(pos);
 
 	auto test = PanelCore::isCreate(panelNumber);
@@ -103,6 +102,10 @@ void StageManager::onTouchEnd(cocos2d::Point pos) {
 		}
 	}
 	manager->getContainer((int)mId);
+}
+
+std::vector < Character* > StageManager::getCharaContainer(int count) {
+	return manager->getContrainer(count);
 }
 
 StagePanel* StageManager::getPanel(int number){

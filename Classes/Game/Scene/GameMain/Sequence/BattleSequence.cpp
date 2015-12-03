@@ -24,14 +24,20 @@ S_STATUS BattelSequence::update(float at){
 }
 
 void BattelSequence::start(float at){
+	CCLOG("BattleStart" + 0);
+	container1 = mStageManager->getCharaContainer(1);
+	container2 = mStageManager->getCharaContainer(2);
 	mState = S_MAIN;
 }
 
 void BattelSequence::main(float at){
+	CCLOG("BattleMain" + 0);
+	container1.at(1)->getParameter();
 	mState = S_END;
 }
 
 void BattelSequence::end(float at){
+	CCLOG("BattleEnd" + 0);
 
 	SequenceManager::GetInstance()->nextScene(new EndSequence(mStageManager));
 	mState = S_NULL;
@@ -53,4 +59,10 @@ bool BattelSequence::onTouchEnded(cocos2d::Touch* touch, cocos2d::Event* event){
 
 void BattelSequence::onEndSequence(){
 
+}
+
+void BattelSequence::speedCheck() {
+	for (int i = 0; i < container1.size(); ++i) {
+		container1.at(i)->getParameter().speed;
+	}
 }

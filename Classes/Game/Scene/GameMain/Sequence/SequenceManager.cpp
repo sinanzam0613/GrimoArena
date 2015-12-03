@@ -72,6 +72,7 @@ void SequenceManager::pop(){
 //次のターンへ
 void SequenceManager::addTurn(){
 	m_Turn++;
+	CCLOG("newxt turn");
 }
 
 //次のシーンの予約

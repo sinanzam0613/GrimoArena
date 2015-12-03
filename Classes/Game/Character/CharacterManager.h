@@ -20,10 +20,13 @@ public:
 	void findPara(int id);
 	static CharacterManager* create();
 	std::array<int, 25> getContainer(int id);
+	std::vector < Character* > getContrainer(int mCount);
 
 private:
 	using CharacterContainer = std::vector < Character* > ;
-	CharacterContainer container;
+	CharacterContainer container1;
+	using CharacterContainer = std::vector < Character* >;
+	CharacterContainer container2;
 	Player* player;
 
 };
