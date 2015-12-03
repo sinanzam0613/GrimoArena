@@ -1,4 +1,4 @@
-#ifndef _CHARACTERMANAGER_H_
+﻿#ifndef _CHARACTERMANAGER_H_
 #define _CHARACTERMANAGER_H_
 
 #include "cocos2d.h"
@@ -21,6 +21,7 @@ public:
 	void findPara(int id);
 	static CharacterManager* create();
 	std::array<int, 25> getContainer(int id);
+	std::vector < Character* > getContrainer(int mCount);
 	bool onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* event);
 	static CharacterManager* create();
 	Parameter getParameter()const
