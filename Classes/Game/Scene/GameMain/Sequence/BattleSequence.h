@@ -2,6 +2,9 @@
 #define BATTLESEQUENCE_H
 
 #include "ISequence.h"
+#include <vector>
+#include "../../../Character/CharacterFactory.h"
+#include "../../../Character/CharacterManager.h"
 
 class BattelSequence : public ISequence
 {
@@ -29,6 +32,12 @@ public:
 	----------------------------------------------------------------------*/
 	bool onTouchEnded(cocos2d::Touch* touch, cocos2d::Event* event) override;
 
+	void speedCheck();
+private:
+	using CharacterContainer = std::vector < Character* >;
+	CharacterContainer container1;
+	using CharacterContainer = std::vector < Character* >;
+	CharacterContainer container2;
 };
 
 #endif

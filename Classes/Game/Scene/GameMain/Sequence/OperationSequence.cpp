@@ -24,6 +24,7 @@ S_STATUS OperationSequence::update(float at){
 
 void OperationSequence::start(float at){
 
+	CCLOG("Ope");
 	mTurnPlayer = mStageManager->getTurnPlayer();
 	
 	mState = S_MAIN;
@@ -39,7 +40,7 @@ void OperationSequence::end(float at){
 	
 	SequenceManager::GetInstance()->nextScene(new BattelSequence(mStageManager));
 
-	if (SequenceManager::GetInstance()->getTurnPlayer() == TURN_PLAYER::PLAYER1){
+	if (SequenceManager::GetInstance()->getTurnPlayer() == TURN_PLAYER::PLAYER2){
 		mState = S_START;
 		return;
 	}
