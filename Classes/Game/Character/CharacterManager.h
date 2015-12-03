@@ -28,6 +28,14 @@ public:
 		return parameter;
 	}
 
+	bool onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* event);
+	static CharacterManager* create();
+	Parameter getParameter()const
+	{
+		return parameter;
+	}
+
+
 private:
 	using CharacterContainer = std::vector < Character* > ;
 	CharacterContainer container;

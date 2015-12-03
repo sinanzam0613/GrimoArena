@@ -1,6 +1,7 @@
 #include "CharacterManager.h"
 #include "Character.h"
 
+
 #define MAX_ARRAY  25
 using namespace cocos2d;
 
