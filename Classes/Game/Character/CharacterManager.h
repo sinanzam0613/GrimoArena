@@ -28,7 +28,6 @@ public:
 	{
 		return parameter;
 	}
-
 	bool onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* event);
 	static CharacterManager* create();
 	Parameter getParameter()const

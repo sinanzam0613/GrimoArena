@@ -101,8 +101,6 @@ void StageManager::onTouchEnd(cocos2d::Point pos) {
 		Vec2 pos = Vec2((panelNumber % 9 + 1) * 64 - 16, (panelNumber / 9 + 1) * 64 + 96);
 		manager->add(factory.create(deck->getCharacterID(), pos));
 	}
-
-
 	mIsChengeColor = true;
 	int panelNumber = this->touchPos(pos);
 
@@ -122,7 +120,6 @@ void StageManager::onTouchEnd(cocos2d::Point pos) {
 	}
 	manager->getContainer((int)mId);
 }
-
 int StageManager::onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* event) {
 	if (manager->onTouchBegan(touch, event))
 	{

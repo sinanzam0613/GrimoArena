@@ -1,9 +1,9 @@
 #include "CharacterManager.h"
 #include "Character.h"
 #include "Game/Scene/GameMain/Sequence/SequenceManager.h"
-
-
 #define MAX_ARRAY  25
+using namespace cocos2d;
+
 using namespace cocos2d;
 
 CharacterManager::CharacterManager()
