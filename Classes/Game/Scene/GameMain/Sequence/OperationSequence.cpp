@@ -25,6 +25,7 @@ S_STATUS OperationSequence::update(float at){
 
 void OperationSequence::start(float at){
 
+	CCLOG("Ope");
 	mTurnPlayer = mStageManager->getTurnPlayer();
 	
 	mState = S_MAIN;

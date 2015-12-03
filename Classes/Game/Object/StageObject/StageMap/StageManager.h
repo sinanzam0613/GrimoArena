@@ -46,6 +46,8 @@ public:
 	StagePanel* getPanel(int number);
 
 	int touchPos(cocos2d::Point pos);
+	
+	std::vector < Character* > getCharaContainer(int count);
 
 	Player* getTurnPlayer();
 
@@ -62,6 +64,8 @@ private:
 	int mTestTrun;
 	std::array<int, 25> mTestArray;
 	std::array<cocos2d::Color3B, 2> playerColorArray { { cocos2d::Color3B::BLUE, cocos2d::Color3B::RED } };
+	using CharacterContainer = std::vector < Character* >;
+	CharacterContainer container;
 
 public:
 	int				   mCount;
