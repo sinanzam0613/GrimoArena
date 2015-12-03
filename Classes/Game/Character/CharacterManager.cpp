@@ -2,11 +2,8 @@
 #include "Character.h"
 #include "Game/Scene/GameMain/Sequence/SequenceManager.h"
 
-<<<<<<< HEAD
-
 #define MAX_ARRAY  25
-=======
->>>>>>> origin/mega
+
 using namespace cocos2d;
 
 CharacterManager::CharacterManager()

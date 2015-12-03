@@ -101,7 +101,6 @@ void StageManager::onTouchEnd(cocos2d::Point pos) {
 		manager->add(factory.create(deck->getCharacterID(), pos));
 	}
 
-
 	mIsChengeColor = true;
 	int panelNumber = this->touchPos(pos);
 
